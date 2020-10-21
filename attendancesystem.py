@@ -194,11 +194,11 @@ if __name__ == '__main__':
         f.writelines("Name,Date,Time\n")
     f.close()
 
-    studentPath = 'studentImages'
+    studentPath = 'studentimages'
     studentImages = []
     studentNames = []
 
-    teacherPath = 'teacherImages'
+    teacherPath = 'teacherimages'
     teacherImages = []
     teacherNames = []
     print('press enter to start. . .')
