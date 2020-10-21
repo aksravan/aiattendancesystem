@@ -136,8 +136,8 @@ def captureStudentVideo():
 
 #sending mail toh the desired teacher. . .
 def sendMail():
-    fromaddr = "kumarprabhat26@gmail.com"
-    toaddr = "thakurdsingh14@gmail.com"
+    fromaddr = "<email_address_of_the_sender>"
+    toaddr = "<email_address_of_the_teacher>"
     
     # instance of MIMEMultipart 
     message = MIMEMultipart() 
@@ -174,7 +174,7 @@ def sendMail():
     s.starttls() 
     
     # Authentication 
-    s.login(fromaddr, "allfather420") 
+    s.login(fromaddr, "<password_of_sender>") 
     
     # Converts the Multipart msg into a string 
     text = message.as_string() 
@@ -187,7 +187,7 @@ def sendMail():
     
 
 if __name__ == '__main__':
-    password = '1234'
+    password = '<here_comes_as_this_is_not_for_production_i_used_single_teacher_myself>'
     file = datetime.now().strftime('%H%M%S')
     #adding headings in the attendance sheet
     with open(f'attendance{file}.csv', 'w+') as f:
